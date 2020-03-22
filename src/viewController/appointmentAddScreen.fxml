@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="329.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.appointmentAddScreenController">
+   <children>
+      <ButtonBar layoutX="-49.0" layoutY="46.0" prefHeight="40.0" prefWidth="213.0">
+        <buttons>
+          <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#onExitClick" text="BACK" />
+            <Button fx:id="addBtn" minWidth="42.0" mnemonicParsing="false" onAction="#onAddClick" prefHeight="25.0" text="ADD" />
+        </buttons>
+      </ButtonBar>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="569.0" text="ADD APPOINTMENT" />
+      <TableView fx:id="customerObjTableView" layoutX="5.0" layoutY="94.0" prefHeight="218.0" prefWidth="159.0">
+        <columns>
+          <TableColumn fx:id="customerName" prefWidth="158.0" text="Cutomer Name" />
+        </columns>
+      </TableView>
+      <HBox layoutX="177.0" layoutY="35.0" prefHeight="280.0" prefWidth="388.0">
+         <children>
+            <VBox prefHeight="397.0" prefWidth="379.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="74.0" text="Title" />
+                        <TextField fx:id="titleTxt" prefHeight="25.0" prefWidth="327.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="70.0" text="Description" />
+                        <TextField fx:id="descriptionTxt" prefHeight="25.0" prefWidth="327.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="71.0" text="Location" />
+                        <TextField fx:id="locationTxt" prefHeight="25.0" prefWidth="327.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="72.0" text="Contact" />
+                        <TextField fx:id="contactTxt" prefHeight="25.0" prefWidth="327.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="72.0" text="Type" />
+                        <TextField fx:id="typeTxt" prefHeight="25.0" prefWidth="327.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="73.0" text="URL" />
+                        <TextField fx:id="urltxt" prefHeight="25.0" prefWidth="327.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="11.0" prefWidth="379.0">
+                     <children>
+                        <Label prefHeight="22.0" prefWidth="70.0" text="Start">
+                           <padding>
+                              <Insets right="10.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="startYear" prefHeight="25.0" prefWidth="42.0" promptText="yyyy">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="startMonth" prefHeight="25.0" prefWidth="42.0" promptText="mm">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="startDay" prefHeight="25.0" prefWidth="42.0" promptText="dd">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="startH" prefHeight="25.0" prefWidth="42.0" promptText="hh">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="startM" prefHeight="25.0" prefWidth="42.0" promptText="mm">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="startAmPm" prefHeight="25.0" prefWidth="69.0" promptText="am or pm">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="15.0" prefWidth="379.0">
+                     <children>
+                        <Label prefHeight="22.0" prefWidth="69.0" text="End">
+                           <padding>
+                              <Insets right="10.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="endYear" prefHeight="25.0" prefWidth="42.0" promptText="yyyy">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="endMonth" prefHeight="25.0" prefWidth="42.0" promptText="mm">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="endDay" prefHeight="25.0" prefWidth="42.0" promptText="dd">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="endH" prefHeight="25.0" prefWidth="42.0" promptText="hh">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="endM" prefHeight="25.0" prefWidth="42.0" promptText="mm">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="endAmPm" prefHeight="25.0" prefWidth="69.0" promptText="am or pm">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
